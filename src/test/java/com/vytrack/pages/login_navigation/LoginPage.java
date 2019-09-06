@@ -59,4 +59,10 @@ public class LoginPage {
             rememberMeElement.click();
         }
     }
+
+    public void goToLandingPage(){
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"+ConfigurationReader.getProperty("environment")));
+    }
+
+
 }
