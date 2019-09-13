@@ -48,6 +48,26 @@ public class LoginPage {
         passwordElement.sendKeys(password);
         loginButtonElement.click();
     }
+    public void login(String role){
+        String username ="";
+        String password = "";
+        if(role.equalsIgnoreCase("driver")){
+            username = ConfigurationReader.getProperty("driverusername");
+            password = ConfigurationReader.getProperty("driverpassword");
+        }else if(role.equalsIgnoreCase("storemanager")){
+            username = ConfigurationReader.getProperty("storemanagerusername");
+            password = ConfigurationReader.getProperty("storemanagerpassword");
+
+        }else if(role.equalsIgnoreCase("salesmanager")){
+            username = ConfigurationReader.getProperty("salesmanagerusername");
+            password = ConfigurationReader.getProperty("salesmanagerpassword");
+
+        }
+
+        userNameElement.sendKeys(username);
+        passwordElement.sendKeys(password);
+        loginButtonElement.click();
+    }
 
     public String getErrorMessage(){
         return errorMessageElement.getText();

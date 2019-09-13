@@ -167,7 +167,7 @@ public class BrowserUtils {
      * @return
      */
     public static List<String> getElementsText(List<WebElement> list) {
-        List<String> elemTexts = new ArrayList<>();
+        List<String> elemTexts = new ArrayList<String>();
         for (WebElement el : list) {
             if (!el.getText().isEmpty()) {
                 elemTexts.add(el.getText());

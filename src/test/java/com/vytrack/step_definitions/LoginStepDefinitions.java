@@ -52,6 +52,12 @@ public class LoginStepDefinitions {
         pages.loginPage().login(username,password);
     }
 
+    @When("user login as a {string}")
+    public void user_login_as_a(String role) {
+        pages.loginPage().login(role);
+
+    }
+
 
 
 
