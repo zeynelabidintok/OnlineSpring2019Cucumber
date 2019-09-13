@@ -1,3 +1,4 @@
+@calendar_events
 Feature: All Calendar Events
   As User I want to be able to see all calendar events as a table
   Scenario: Verify column names

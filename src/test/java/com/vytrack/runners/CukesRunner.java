@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",
                 "html:target/default-cucumber-reports"
         },
-      //  tags = {"@navigation"},
+       tags = {"@calendar_events"},
         features = {
                 "src/test/resources/features"
 
@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         glue = {
                 "com/vytrack/step_definitions"
         },
-        dryRun = false
+        dryRun = true
 )
 public class CukesRunner {
 }
