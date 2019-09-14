@@ -5,10 +5,10 @@ Feature: All Calendar Events
     Given user logs in as a store manager
     When user navigates to "Activities" and "Calendar Events"
     Then following table headers should be displayed
-      |   Title         |
-      |Calendar         |
-      |Start            |
-      |End              |
-      |Recurrent        |
-      |Recurrence       |
-      |Invitation Status|
+      |TITLE            |
+      |CALENDAR         |
+      |START            |
+      |END              |
+      |RECURRENT        |
+      |RECURRENCE       |
+      |INVITATION STATUS|
